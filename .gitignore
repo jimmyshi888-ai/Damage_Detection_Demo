@@ -1,0 +1,15 @@
+# 忽略 Python 產生的暫存檔
+__pycache__/
+*.pyc
+
+# 忽略龐大的資料集照片與訓練日誌 (避免把 GitHub 塞爆)
+dataset/
+runs/
+test_samples/
+
+# 忽略 YOLO 自動下載的官方預訓練大腦 (我們只傳我們自己訓練好的 best.pt 即可)
+yolov8n-cls.pt
+
+# 忽略虛擬環境 (如果有使用的話)
+venv/
+.env
