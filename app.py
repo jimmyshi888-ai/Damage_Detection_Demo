@@ -47,7 +47,8 @@ with gr.Blocks(title="物流損壞辨識系統") as demo:
             input_img = gr.Image(
                 type="pil", 
                 label="圖片來源", 
-                sources=["webcam", "upload"]
+                sources=["webcam", "upload"],
+                height=400
             )
             btn = gr.Button("🔍 開始 AI 分析", variant="primary", size="lg")
         
